@@ -10,18 +10,31 @@
     </label>
     <input type="password" required v-model = "password"/>
 
+    <label>
+        Role:
+    </label>
+
+    <select>
+        <option value="Web Developer">Web Developer</option>
+    </select>
+
+
   </form>
 
 <p> Email: {{ email }}</p>
 <p>Password: {{ password  }}</p>
 
+
+
 </template>
+
+// Probably can remove the v-model stuff because we don't need it 
 
 <script>
 export default {
     data() {
         return{
-            email: '',
+            email: 'Mario',
             password:'',
         }
     }
