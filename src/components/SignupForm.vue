@@ -15,7 +15,8 @@
     </label>
 
     <select>
-        <option value="Web Developer">Web Developer</option>
+        <option value="Developer">Web Developer</option>
+        <option value="Designer">Web Designer</option>
     </select>
 
 
