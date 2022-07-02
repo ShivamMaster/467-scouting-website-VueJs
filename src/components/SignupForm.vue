@@ -13,6 +13,7 @@
     <label>
         Role:
     </label>
+    <input type="role" required v-model = "role"/>
 
     <select>
         <option value="Developer">Web Developer</option>
@@ -37,6 +38,7 @@ export default {
         return{
             email: 'Mario',
             password:'',
+            role:'',
         }
     }
 }
