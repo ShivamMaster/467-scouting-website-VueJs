@@ -25,6 +25,10 @@
       <label> Accept the terms and conditions</label>
     </div>
 
+    <div class="submit">
+      <button>Create an Account</button>
+    </div>
+
     <div>
       <input type="checkbox" value="Shaun" v-model="names" />
       <label>Shaun</label>
@@ -75,8 +79,8 @@ export default {
     },
     deleteSkill(skill) {
       this.skills = this.skillsfilter((item) => {
-        return skill !== item
-      })
+        return skill !== item;
+      });
     },
   },
 };
@@ -124,7 +128,7 @@ input[type="checkbox"] {
 .pill {
   display: inline-block;
   margin: 20px 10px 0 0;
-  padding: 6px 12 px;
+  padding: 6px 12px;
   background: #eeee;
   border-radius: 20px;
   font-size: 12px;
@@ -132,5 +136,18 @@ input[type="checkbox"] {
   font-weight: bold;
   color: #777;
   cursor: pointer;
+}
+
+button {
+  background: #0b6dff;
+  border: 0;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.submit {
+  text-align: center;
 }
 </style>
