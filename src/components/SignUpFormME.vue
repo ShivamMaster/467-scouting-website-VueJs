@@ -15,11 +15,13 @@
     <label> Scouter Name: </label>
     <input type="Scouter Name" required v-model="ScouterName" />
 
-
+    <div class="autostuff">
+      <label>Auto</label>
+      <input type="auto" v-model="autostuff" required />
+    </div>
     <div class="submit">
       <button>Submit the Data</button>
     </div>
-
   </form>
 </template>
 
@@ -33,11 +35,11 @@ export default {
     };
   },
 
-methods: {
-    handleSubmit(){
-        //this.MatchNumber = [1, 2, 3, 4, 5] ? "" : "Enter in a valid number";
-    }
-}
+  methods: {
+    handleSubmit() {
+      //this.MatchNumber = [1, 2, 3, 4, 5] ? "" : "Enter in a valid number";
+    },
+  },
 };
 </script>
 
@@ -111,5 +113,15 @@ button {
   margin-top: 10px;
   font-size: 0.8em;
   font-weight: bold;
+}
+
+input[type="autostuff"] {
+  display: block;
+  padding: 10px 6px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: #555;
 }
 </style>
