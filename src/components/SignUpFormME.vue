@@ -96,7 +96,7 @@ input[type="checkbox"] {
 }
 
 button {
-  background: #0b6dff;
+  background: rgb(2, 40, 111);
   border: 0;
   padding: 10px 20px;
   margin-top: 20px;
