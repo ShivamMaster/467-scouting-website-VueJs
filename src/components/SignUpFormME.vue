@@ -54,7 +54,7 @@ form {
 }
 
 label {
-  color: #aaa;
+  color: rgb(193, 182, 92);
   display: inline-block;
   margin: 25px 0 15 px;
   font-size: 0.6em;
