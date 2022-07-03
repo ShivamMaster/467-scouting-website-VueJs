@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form @submit.prevent="handleSubmit">
     <label> Email: </label>
     <input type="email" required v-model="email" />
 
@@ -82,6 +82,9 @@ export default {
         return skill !== item;
       });
     },
+    handleSubmit(){
+        console.log('form submitted')
+    }
   },
 };
 </script>
