@@ -14,6 +14,12 @@
 
     <label> Scouter Name: </label>
     <input type="Scouter Name" required v-model="ScouterName" />
+
+
+    <div class="submit">
+      <button>Submit the Data</button>
+    </div>
+
   </form>
 </template>
 
@@ -26,6 +32,12 @@ export default {
       ScouterName: "",
     };
   },
+
+methods: {
+    handleSubmit(){
+        //this.MatchNumber = [1, 2, 3, 4, 5] ? "" : "Enter in a valid number";
+    }
+}
 };
 </script>
 
