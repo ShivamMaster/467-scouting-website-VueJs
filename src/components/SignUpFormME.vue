@@ -3,16 +3,16 @@
     <label> Match Number: </label>
     <input type="MatchNumber" required v-model="MatchNumber" />
 
-     <label> Team Number: </label>
+    <label> Team Number: </label>
     <select>
       <option value="467">467</option>
-      <option value="254">254</option>
       <option value="176">176</option>
       <option value="177">177</option>
       <option value="190">190</option>
+      <option value="254">254</option>
     </select>
 
-<label> Scouter Name: </label>
+    <label> Scouter Name: </label>
     <input type="Scouter Name" required v-model="ScouterName" />
   </form>
 </template>
